@@ -30,7 +30,7 @@ def handle_message(message):
     try:
         # Groq se fast reply mangwana
         completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile", # Ye sabse best model hai Groq ka
+            model="llama3-8b-8192", # Ye sabse best model hai Groq ka
             messages=[
                 {"role": "system", "content": "Aapka naam Sarthak hai. Aap ek intelligent AI assistant hain."},
                 {"role": "user", "content": message.text}
